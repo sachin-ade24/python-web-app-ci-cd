@@ -16,9 +16,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: |
-          npm install -g npm@latest # Update npm to the latest version
-          npm ci || npm install # Use npm ci if package-lock.json exists, otherwise use npm install
+        run: npm install -g npm@latest # Update npm to the latest version
 
       - name: Run ESLint
         run: npx eslint hello-world.js
