@@ -16,7 +16,4 @@ jobs:
           node-version: '18'
 
       - name: Run ESLint
-        uses: iCrawl/action-eslint@v1
-        with:
-          files: hello-world.js
-          custom-glob: src
+        run: npx eslint hello-world.js
