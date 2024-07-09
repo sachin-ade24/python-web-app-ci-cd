@@ -16,4 +16,6 @@ jobs:
           node-version: '18'
 
       - name: Run ESLint
-        run: npx eslint hello-world.js
+        uses: actions/eslint@9.6.0
+        with: 
+          file: hello-world.js
