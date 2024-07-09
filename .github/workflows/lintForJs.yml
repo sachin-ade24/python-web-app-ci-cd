@@ -15,8 +15,14 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Display Node.js version
+        run: node -v
+
+      - name: Display npm version
+        run: npm -v
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run ESLint
         run: npx eslint hello-world.js
