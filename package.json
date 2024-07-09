@@ -1,0 +1,17 @@
+{
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "description": "My Node.js application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'Build step placeholder'",
+    "test": "echo 'Test step placeholder'",
+    "lint": "eslint ."
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
