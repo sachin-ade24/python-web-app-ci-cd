@@ -21,8 +21,5 @@ jobs:
       - name: Display npm version
         run: npm -v
 
-      - name: Install dependencies
-        run: npm ci
-
       - name: Run ESLint
         run: npx eslint hello-world.js
