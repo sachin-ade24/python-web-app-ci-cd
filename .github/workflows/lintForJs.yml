@@ -2,6 +2,9 @@ name: Lint JavaScript Code
 
 on: push
 
+env: 
+  ARTIFACT_NAME: myArtifact
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -34,5 +37,5 @@ jobs:
         if: success()  # Upload artifacts only if previous steps were successful
         uses: actions/upload-artifact@v2
         with:
-          name: my-artifact
-          path: path/to/artifact  # Replace with the path to your artifact directory or file
+            name: ${{env.ARTIFACT_NAME}}
+            path: .
