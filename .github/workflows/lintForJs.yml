@@ -19,3 +19,4 @@ jobs:
         uses: iCrawl/action-eslint@v1
         with:
           files: hello-world.js
+          custom-glob: src
