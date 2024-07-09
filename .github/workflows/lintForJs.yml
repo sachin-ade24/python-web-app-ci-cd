@@ -22,6 +22,6 @@ jobs:
         run: npm -v
 
       - name: Run ESLint
-        uses: stefanoeb/eslint-action@1.0.2
+        uses: bradennapier/eslint-plus-action@v3
         with:
           files: hello-world.js
