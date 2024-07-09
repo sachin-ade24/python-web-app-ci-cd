@@ -16,6 +16,6 @@ jobs:
           node-version: '18'
 
       - name: Run ESLint
-        uses: bradennapier/eslint-plus-action@v3
+        uses: iCrawl/action-eslint@v1
         with:
           files: hello-world.js
